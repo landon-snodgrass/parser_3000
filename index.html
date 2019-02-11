@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Shadows+Into+Light|ZCOOL+KuaiLe" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container bg-light-blue">
+            <div class='header'>
+                <h1 class="header title">Parser 3000</h1>
+                <h2 class="header subtitle">The coolest thing since sliced bread!</h2>
+                <p class="caveat">Okay that's probably not true, it's only okay</p>
+            </div>
+            <div class='row'>
+                <div class='col-sm-2 button-container text-center'>
+                    <button class="m-3 btn btn-success" onclick="addFilter()">Add filter</button>
+                    <button class="m-3 btn btn-danger" onclick="deleteFilter()">Delete filter</button>
+                </div>
+                <div class="col-sm-5">
+                    <div id="filterContainer">
+                        <div class="filter-holder">
+                            <input type='text' class='filter' id="filter">
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-5 text-container'>
+                    <textarea id="urlText"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-sm-12 text-center'>
+                    <div class="button-holder"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center breathe">
+                    <button class="btn btn-lg btn-primary btn-block" onclick="parse()">Parse!</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="parser.js"></script>
+    </body>
+</html>
